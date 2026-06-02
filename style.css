@@ -1,0 +1,37 @@
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    margin: 50px;
+    }
+
+h1 {
+    color: white;
+    
+}
+
+a {
+    display: block;
+    width: 200px;
+    margin: 20px;
+    margin-bottom: 10px;
+    background: rgb(241, 146, 4);
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background: rgb(255, 145, 0);
+    transform: translateX(5px);
+}
+
+h2 { 
+    color: white;
+}
+
+P {
+    color: white;
+    margin: 20px;
+}
