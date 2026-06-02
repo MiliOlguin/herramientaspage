@@ -1,8 +1,9 @@
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    margin: 50px;
+    }
 
-    body {
-    background: red !important;
-}
-  
 h1 {
     color: white;
     
