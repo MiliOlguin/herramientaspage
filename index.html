@@ -5,13 +5,21 @@
         <meta name="viewport" content="width=device-width,
         initial-scale=1.0">
         <title>Herramientas Asesores</title>
-        <link rel="stylesheet" href="style.css">   
+        <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="icon" type="image/png" href="../favicon.png">
     </head>
 
     <body>
+        <input
+          type="text"
+          id="buscador"
+          placeholder="Buscar herramientas..."
+          onkeyup="buscarHerramienta()">
+
         <h1>
             Herramientas para Asesores MVS
         </h1>
+        <div class="contenedor-botones">
             <a href="https://192.168.1.99/index.php" class="cta-btn">ISABEL</a>
             <a href="https://padlet.com/leandroavila93/movistar-mausof-dwptjrnnmzslsf9q" class="cta-btn">PADLETT</a>
             <a href="https://nollame.aaip.gob.ar/" class="cta-btn">REGISTRO NO LLAME</a>
@@ -28,6 +36,7 @@
             <a href="http://192.168.1.25:800/#metricas" class="cta-btn">HORUS</a>
             <a href="https://www.cuitonline.com/" class="cta-btn">ARCHIVO ARCA</a>
             <a href="https://www.agip.gob.ar/" class="cta-btn">INGRESOS BRUTOS</a>
+            </div>
         <h1>
             Contactos
         </h1>
@@ -36,7 +45,31 @@
         <p>WSP SOPORTE CORPO: 11 2261-5555</p>
         <P>TELEFONO GENERAL: 0800-321-0611</P>
 
+        <script>
+           document.querySelectorAll('.cta-btn').forEach(link => {
+           link.setAttribute('target', '_blank');
+           link.setAttribute('rel', 'noopener noreferrer');
+           });
+        </script>
 
+        <script>
+           function buscarHerramienta() {
+           let input = document.getElementById("buscador");
+           let filtro = input.value.toUpperCase();
+
+           let enlaces = document.querySelectorAll(".contenedor-botones a");
+
+           enlaces.forEach(enlace => {
+           let texto = enlace.textContent || enlace.innerText;
+
+           if (texto.toUpperCase().indexOf(filtro) > -1) {
+            enlace.style.display = "";
+           } else {
+            enlace.style.display = "none";
+           }
+         });
+         }
+        </script>
 
 
     </body>
