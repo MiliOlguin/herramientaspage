@@ -1,9 +1,8 @@
 body {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     font-family: 'Times New Roman', Times, serif;
     margin: 50px;
-    
-}
+    }
 
 h1 {
     color: white;
@@ -21,6 +20,18 @@ a {
     text-decoration: none;
     border-radius: 8px;
     transition: 0.3s;
+}
+
+#buscador {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    margin: 20px;
+    border-radius: 8px;
+    border-color: white;
+    font-size: 16px;
+    background-color: black;
+    color: white;
 }
 
 a:hover {
