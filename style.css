@@ -47,3 +47,20 @@ P {
     color: white;
     margin: 20px;
 }
+
+details {
+    margin: 20px;
+}
+
+summary {
+    cursor: pointer;
+    padding: 12px;
+    background: #25D366;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.grupo-links {
+    margin-top: 10px;
+}
