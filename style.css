@@ -54,6 +54,7 @@ details {
 
 summary {
     cursor: pointer;
+    width: 290px;
     padding: 12px;
     background: #25D366;
     color: white;
