@@ -10,16 +10,33 @@
     </head>
 
     <body>
+        <nav>
+            <div class="logo">
+                <img src="favicon.png" alt="Logo">
+                <span>Herramientas MVS</span>
+            </div>
+
+            <div class="menu">
+                <a href="#videos">Videos</a>
+                <a href="#contactos">Contactos</a>
+            </div>
+        </nav>
+
+<header class="hero">
+    <h1>Herramientas para Asesores</h1>
+
+    <p>
+        Todo lo que necesitas para tu gestión comercial, organizado en un único espacio.
+    </p>
+    
+</header>
         <input
           type="text"
           id="buscador"
           placeholder="Buscar herramientas..."
           onkeyup="buscarHerramienta()">
 
-        <h1>
-            Herramientas para Asesores MVS
-        </h1>
-
+    
         <div class="contenedor-botones">
 
             <h2>Inicio de Jornada</h2>
@@ -38,8 +55,7 @@
 
             <h2>Gestión de Carga</h2>
             <a href="http://192.168.1.3:5000/" class="cta-btn">AUDIOS TOANPE</a>
-            <a href="https://share.google/LqEwXp4rIhKTJNc8P" class="cta-btn">CONVERSOR DE AUDIOS</a>
-
+            <a href="https://online-audio-converter.com/sp/" class="cta-btn">CONVERSOR DE AUDIOS</a>
 
             <h2>Seguimiento</h2>
             <a href="http://192.168.1.25:800/#metricas" class="cta-btn">HORUS</a>
@@ -59,21 +75,54 @@
            </details>
 
         </div>
-
-        <details>
+<details>
          <summary>Herramientas de Difusión</summary>
 
          <a href="https://chromewebstore.google.com/detail/njlokjfmljicmjpongdkpgkpcemppmbn?utm_source=item-share-cb" class="cta-btn">WABiz</a>
 
         </details>
 
-        <h1>
-            Contactos
-        </h1>
-        <P>IVR: 1132201484 </P>
-        <P>WSP SOPORTE IND: 1122616666 </P>
-        <p>WSP SOPORTE CORPO: 1122615555</p>
-        <P>TELEFONO GENERAL: 0800-321-0611</P>
+
+<div class="video-card" id="videos">
+        <details>
+        <summary>Videos</summary>
+
+        <div class="video-item">
+        <video controls>
+            <source src="Activar Chip MVS.mp4" type="video/mp4">
+        </video>
+
+        <a href="Activar Chip MVS.mp4" download class="descargar-btn">
+            ⬇ Descargar
+        </a>
+        </div>
+
+        <div class="video-item">
+        <video controls>
+            <source src="Pago Deuda MP.mp4" type="video/mp4">
+        </video>
+
+        <a href="Pago Deuda MP.mp4" download class="descargar-btn">
+            ⬇ Descargar
+        </a>
+        </div>
+        </details>
+    
+    </div>
+
+</div>
+
+
+       <div class="contactos" id="contactos">
+
+    <h1>📞 Contactos</h1>
+
+    <p>IVR: 1132201484</p>
+    <p>WSP SOPORTE IND: 1122616666</p>
+    <p>WSP SOPORTE CORPO: 1122615555</p>
+    <p>TELÉFONO GENERAL: 0800-321-0611</p>
+
+</div>
 
         <script>
            document.querySelectorAll('.cta-btn').forEach(link => {
@@ -100,7 +149,10 @@
          });
          }
         </script>
-
+<footer>
+    <p>Herramientas para Asesores MVS</p>
+    <p>Sugerencias <a href="https://docs.google.com/forms/d/1jCVIo9-JB_rI6mWD9-ae7sDjNc0KImkV1MtgP0F2uao/edit#responses" class="cta-btn btn-footer">Click Aquí</a></p>
+</footer>
 
     </body>
 </html>
