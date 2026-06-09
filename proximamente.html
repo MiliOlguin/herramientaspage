@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Próximamente</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#0f172a;
+    color:white;
+}
+
+.container{
+    width:90%;
+    max-width:800px;
+    text-align:center;
+}
+
+.badge{
+    display:inline-block;
+    padding:10px 20px;
+    border-radius:30px;
+    background:rgba(59,130,246,.15);
+    border:1px solid rgba(59,130,246,.4);
+    color:#60a5fa;
+    margin-bottom:25px;
+    font-size:14px;
+}
+
+h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.highlight{
+    color:#38bdf8;
+}
+
+p{
+    color:#cbd5e1;
+    font-size:1.1rem;
+    max-width:650px;
+    margin:auto;
+    line-height:1.7;
+    margin-bottom:40px;
+}
+
+.progress{
+    width:100%;
+    height:18px;
+    background:#1e293b;
+    border-radius:50px;
+    overflow:hidden;
+    position:relative;
+}
+
+.progress-bar{
+    width:85%;
+    height:100%;
+    border-radius:50px;
+    background:linear-gradient(
+        90deg,
+        #0ea5e9,
+        #38bdf8,
+        #7dd3fc
+    );
+    position:relative;
+}
+
+.progress-bar::after{
+    content:'';
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.5),
+        transparent
+    );
+    animation:shine 2s infinite;
+}
+
+@keyframes shine{
+    100%{
+        left:100%;
+    }
+}
+
+.percent{
+    margin-top:15px;
+    font-size:15px;
+    color:#94a3b8;
+}
+
+.cards{
+    margin-top:50px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1e293b;
+    border:1px solid #334155;
+    padding:25px;
+    border-radius:15px;
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#38bdf8;
+}
+
+.card p{
+    font-size:.95rem;
+    margin:0;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="badge">
+        ACTUALIZACIÓN EN CURSO
+    </div>
+
+    <h1>
+        Algo <span class="highlight">Óptimo</span>
+        Está Llegando
+    </h1>
+
+    <p>
+        Estoy desarrollando nuevas herramientas y mejoras
+        para ofrecer una experiencia más rápida, moderna y eficiente.
+        Vuelve pronto para descubrir todas las novedades...
+    </p>
+
+    <div class="progress">
+        <div class="progress-bar"></div>
+    </div>
+
+    <div class="percent">
+        Progreso de actualización: 85%
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <h3>⚡ Todo lo que necesitas</h3>
+            <p>Con acceso más rápido a todas tus herramientas diarias.</p>
+        </div>
+
+        <div class="card">
+            <h3>🛠 Nuevas herramientas</h3>
+            <p>Funciones diseñadas para simplificar tareas.</p>
+        </div>
+
+        <div class="card">
+            <h3>📱 Diseño adaptable</h3>
+            <p>Compatible con celulares, tablets y PC.</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
