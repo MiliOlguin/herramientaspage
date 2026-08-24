@@ -1,0 +1,87 @@
+/*GENERAL*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0F172A;
+    color:#F8FAFC;
+    max-width:1200px;
+    margin:0 auto;
+    padding:20px;
+}
+
+
+nav{
+    background:#1E293B;
+    border-radius:15px;
+    padding:15px 25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+
+/* CAMPAÑA DIRECTV */
+
+.directv-section {
+    padding: 40px 25px;
+    background: #1E293B;
+    min-height: 100vh;
+}
+
+.directv-section h1 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 28px;
+    font-weight: 700;
+}
+
+.directv-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.directv-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 290px;
+    height: 56px;
+
+    background: #2864E6;
+    color: white;
+
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 400;
+
+    border-radius: 13px;
+    transition: 0.2s ease;
+}
+
+.directv-btn:hover {
+    background: #1F56D0;
+    transform: translateY(-2px);
+}
