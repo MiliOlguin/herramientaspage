@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #1E293B;
+    color: white;
+}
+
+.textos-container {
+    padding: 40px 25px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.texto-card {
+    background: #25344D;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.texto-card h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.texto-contenido {
+    background: #334155;
+    padding: 18px;
+    border-radius: 10px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.texto-card button {
+    background: #2864E6;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.texto-card button:hover {
+    background: #1F56D0;
+}
+
+
+.texto-contenido {
+    background: #334155;
+    padding: 18px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+
+    /* Mantiene saltos de línea y espacios */
+    white-space: pre-wrap;
+
+    /* Evita que el texto se salga de la tarjeta */
+    overflow-wrap: break-word;
+
+    /* Mantiene una fuente prolija */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+
+    color: white;
+}
